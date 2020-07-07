@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <TextView
+            android:text="@string/conn_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/conn_password_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/connLogin"/>
+    <TextView
+            android:text="@string/conn_port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/conn_port_text"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:textSize="24sp" app:layout_constraintTop_toBottomOf="@+id/connIP"/>
+    <TextView
+            android:text="@string/conn_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/conn_ip_text"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="24sp" android:layout_marginTop="24dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/connPort"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:inputType="text" app:layout_constraintTop_toBottomOf="@+id/conn_port_text"/>
+    <TextView
+            android:text="@string/conn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/conn_login_text"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:textSize="24sp" app:layout_constraintTop_toBottomOf="@+id/connPort"/>
+    <Button
+            android:text="@string/conn_button"
+            android:layout_width="228dp"
+            android:layout_height="62dp" android:id="@+id/conn_connect"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.579"
+            app:layout_constraintTop_toBottomOf="@+id/conn_password_input "/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/connIP" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/conn_ip_text"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/connLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/conn_login_text"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/connPassword"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/conn_password_text"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

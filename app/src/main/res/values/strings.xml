@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FTP keyboard parser</string>
+    <string name="begin_desc">Welcome to our app! Please click on BEGIN to download and parse your WSO text file.</string>
+    <string name="begin_button">BEGIN</string>
+    <string name="conn_ip">IP address</string>
+    <string name="conn_port">Port number</string>
+    <string name="conn_login">Login</string>
+    <string name="conn_password">Password</string>
+    <string name="conn_button">CONNECT</string>
+    <string name="show_desc">Output of parsed file below:</string>
+    <string name="show_back">BACK</string>
+</resources>
